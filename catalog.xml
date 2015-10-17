@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/home/vortigern/NetBeansProjects/bomworkshop2015a/bomworkshop2015a/src/main/resources/xsd/SyncBOM/SyncBOM.xsd" uri="src/main/resources/jaxb/oagi_961_syncBOM_v1/SyncBOM.xsd"/>
+    <system systemId="file:/home/vortigern/NetBeansProjects/bomworkshop2015a/bomworkshop2015a/src/main/resources/xsd/SyncBOM.xsd" uri="src/main/resources/jaxb/oagi101_synBOM_v1/SyncBOM.xsd"/>
+</catalog>
