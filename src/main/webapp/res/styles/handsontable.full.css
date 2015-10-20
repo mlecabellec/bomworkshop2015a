@@ -1150,7 +1150,7 @@ thead .htCollapseButton:after {
 .htContextMenu .ht_master .wtHolder {
   overflow: hidden;
 }
-@charset "UTF-8";
+//@charset "UTF-8";
 
 /*!
  * Pikaday
