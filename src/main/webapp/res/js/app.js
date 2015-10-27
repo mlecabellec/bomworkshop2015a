@@ -145,3 +145,32 @@ this.APP["home"] = this.APP["home"] || {
 };
 APP.home.bootstrap();
 
+
+//------------------------------------------------------------------------------
+
+this.APP["bomGeneralDashboard"] = this.APP["home"] || {
+    moduleInfo:
+            {
+                moduleId: "APP.bomGeneralDashboard",
+                moduleVersion: "0.0.1-DEV",
+                description: "BOM general dashboard"
+            },
+    bootstrap: function bootstrap() {
+        APP.loadedModules = APP.loadedModules.concat(APP.bomGeneralDashboard.moduleInfo);
+    },
+    gui: {
+        init: function init() {
+
+         
+         
+
+        }
+    },
+    toolKit: {},
+    data: {}
+};
+APP.bomGeneralDashboard.bootstrap();
+
+
+
+
