@@ -3,6 +3,7 @@
     <display-name>BOM whrokshop 2015A</display-name>
     <description>Proof of concept for OAGIS/JMS capable BOM manipulaton WebApp.</description>
     <listener>
+        <description>Setup of spring security</description>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
     <!--
@@ -21,6 +22,7 @@
         <param-value>servletapi.root</param-value>
     </context-param>
     <filter>
+        <description>Filtr for spring security</description>
         <filter-name>springSecurityFilterChain</filter-name>
         <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
         <async-supported>true</async-supported>
@@ -32,9 +34,11 @@
         <dispatcher>ASYNC</dispatcher>
     </filter-mapping>
     <listener>
+        <description>Setup of quartz scheduler see src/resources/qartz.properties</description>
         <listener-class>org.quartz.ee.servlet.QuartzInitializerListener</listener-class>
     </listener>
     <servlet>
+        <description>Jersey servlet mapping for data services</description>
         <servlet-name>jerseyServlet01</servlet-name>
         <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
         <init-param>
@@ -55,4 +59,7 @@
             30
         </session-timeout>
     </session-config>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
 </web-app>
