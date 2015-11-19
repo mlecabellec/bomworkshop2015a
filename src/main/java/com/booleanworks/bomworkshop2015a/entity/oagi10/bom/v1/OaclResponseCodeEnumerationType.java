@@ -8,6 +8,7 @@
 
 package com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1;
 
+import javax.persistence.Entity;
 import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
@@ -31,6 +32,7 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  */
+@Entity
 @XmlType(name = "oacl_ResponseCodeEnumerationType")
 @XmlEnum
 public enum OaclResponseCodeEnumerationType {

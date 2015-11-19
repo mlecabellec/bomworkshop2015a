@@ -10,6 +10,7 @@ package com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
+import javax.persistence.Entity;
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlElementDecl;
 import javax.xml.bind.annotation.XmlRegistry;
@@ -33,6 +34,7 @@ import javax.xml.namespace.QName;
  * provided in this class.
  * 
  */
+@Entity
 @XmlRegistry
 public class ObjectFactory {
 

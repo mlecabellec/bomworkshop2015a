@@ -8,6 +8,7 @@
 
 package com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1;
 
+import javax.persistence.Entity;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
@@ -35,6 +36,7 @@ import javax.xml.bind.annotation.XmlType;
  * 
  * 
  */
+@Entity
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "NoteType")
 public class NoteType
