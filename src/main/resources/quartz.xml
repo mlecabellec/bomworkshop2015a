@@ -6,9 +6,9 @@ and open the template in the editor.
 -->
 
 
-<quartz:job-scheduling-data
+<job-scheduling-data
     xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
-    xmlns:quartz='http://www.quartz-scheduler.org/xml/JobSchedulingData'
+    xmlns='http://www.quartz-scheduler.org/xml/JobSchedulingData'
     xsi:schemaLocation='http://www.quartz-scheduler.org/xml/JobSchedulingData file:/home/vortigern/NetBeansProjects/bomworkshop2015aa/bomworkshop2015a/src/main/resources/job_scheduling_data_2_0.xsd'>
     <pre-processing-commands>
         <delete-jobs-in-group>*</delete-jobs-in-group>  <!-- clear all jobs in scheduler -->
@@ -33,17 +33,16 @@ and open the template in the editor.
 
     <schedule>
         <job>
-            <name>testJob</name>
+            <name>TestJob</name>
             <job-class>com.booleanworks.bomworkshop2015a.job.TestJob</job-class>
         </job>
         <trigger>
             <simple>
-                <name>TenSecondIntervals</name>
-                <job-name>MyJob</job-name>
-                <repeat-count>-1</repeat-count> <!-- repeat forever  -->
-                <repeat-interval>10000</repeat-interval>  <!--  every 10 seconds -->
+                <name>TestJob</name>
+                <job-name>TestJob</job-name>
+                <repeat-count>-1</repeat-count>
+                <repeat-interval>10000</repeat-interval>
             </simple>
         </trigger>
-
     </schedule>
-</quartz:job-scheduling-data>
+</job-scheduling-data>
