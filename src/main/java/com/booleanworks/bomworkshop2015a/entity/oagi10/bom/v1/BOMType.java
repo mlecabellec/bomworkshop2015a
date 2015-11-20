@@ -12,6 +12,9 @@ import java.util.List;
 import java.util.Objects;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.PrePersist;
+import javax.persistence.PreRemove;
+import javax.persistence.PreUpdate;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
@@ -63,9 +66,23 @@ public class BOMType implements Serializable {
     private static final long serialVersionUID = -726596587844463058L;
 
     @Id
-    @XmlTransient
-    public Long getId() {
-        return (long) this.hashCode();
+    protected int id;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    @PrePersist
+    @PreRemove
+    @PreUpdate
+    public void prepare() {
+        
+        //this.id = this.hashCode() ;
+        this.id = this.getBOMHeader().getID().hashCode() ;
     }
 
     @Override
@@ -111,8 +128,6 @@ public class BOMType implements Serializable {
         }
         return true;
     }
-    
-    
 
     @XmlElement(name = "BOMHeader")
     protected BOMHeaderType bomHeader;
