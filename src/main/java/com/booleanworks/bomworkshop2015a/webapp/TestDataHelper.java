@@ -23,7 +23,6 @@ import javax.xml.bind.JAXB;
  * @author vortigern
  */
 public class TestDataHelper implements ServletContextListener {
-    EntityManagerFactory emf = Persistence.createEntityManagerFactory("com.booleanworks_bomworkshop2015a_war_1.0-SNAPSHOTPU");
 
     @Override
     public void contextInitialized(ServletContextEvent sce) {
@@ -42,6 +41,8 @@ public class TestDataHelper implements ServletContextListener {
                 Logger.getGlobal().warning("TestDataHelper.contextInitialized, got an object !!!");
                 System.out.println("TestDataHelper.contextInitialized, got an object !!!");
                 
+                EntityManagerFactory emf = Persistence.createEntityManagerFactory("com.booleanworks_bomworkshop2015a_war_1.0-SNAPSHOTPU");
+
                 emf.createEntityManager().persist(testsyncBom);
                 
             }else

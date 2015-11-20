@@ -11,6 +11,7 @@ package com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1;
 import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
@@ -87,6 +88,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 public class IdentificationType {
 
     @XmlElement(name = "ID")
+    @Id
     protected List<OpenIDType> id;
     @XmlElement(name = "IDSet")
     protected List<IDSetType> idSet;
@@ -200,6 +202,14 @@ public class IdentificationType {
      */
     public void setActionCode(String value) {
         this.actionCode = value;
+    }
+
+    public List<OpenIDType> getId() {
+        return id;
+    }
+
+    public void setId(List<OpenIDType> id) {
+        this.id = id;
     }
 
 }

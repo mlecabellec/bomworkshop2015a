@@ -11,6 +11,7 @@ package com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1;
 import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -78,6 +79,7 @@ public class ApplicationAreaBaseType {
     @XmlElement(name = "CorrelationID")
     protected IDType correlationID;
     @XmlElement(name = "BODID")
+    @Id
     protected IDType bodid;
 
     /**

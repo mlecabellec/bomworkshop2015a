@@ -3,14 +3,183 @@
   <persistence-unit name="com.booleanworks_bomworkshop2015a_war_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
     <provider>org.hibernate.ejb.HibernatePersistence</provider>
     <class>com.booleanworks.bomworkshop2015a.entity.AppParam</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ActionCriteriaType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ActionExpressionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ActionVerbType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.AddressBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.AddressExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.AddressType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.AllExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.AmountType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.AmountType0723C8</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.AnyUserAreaType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ApplicationAreaBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ApplicationAreaExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ApplicationAreaType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.AttachmentBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.AttachmentExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.AttachmentType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.BOMHeaderBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.BOMHeaderExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.BOMHeaderType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.BOMItemDataBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.BOMItemDataExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.BOMItemDataType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.BOMOptionBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.BOMOptionClassBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.BOMOptionClassExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.BOMOptionClassType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.BOMOptionExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.BOMOptionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.BOMReferenceBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.BOMReferenceExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.BOMReferenceType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.BOMType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.BinaryObjectType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.BinaryObjectType290B4F</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.BusinessObjectDocumentType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ChangeStatusBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ChangeStatusExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ChangeStatusType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ClassificationBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ClassificationExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ClassificationType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.Clm6TimeZoneCode1TimeZoneCodeContentType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.CodeType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.CodeType1DEB05</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.CodesType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.CommunicationBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.CommunicationExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.CommunicationType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ConfirmationCodeType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ConfirmationCodesType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ContactABIEType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ContactBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ContactExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ContactType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.CoordinateBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.CoordinateExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.CoordinateType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.CountryCodeType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.CountrySubDivisionCodeType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.DescriptionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.DimensionExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.DimensionsABIEType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.DimensionsBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.DimensionsType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.DocumentIdentificationBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.DocumentReferenceBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.DocumentReferenceExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.DocumentReferenceType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.EMailAddressCommunicationBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.EMailAddressCommunicationExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.EMailAddressCommunicationType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.EffectiveValueListBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.EffectiveValueListExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.EffectiveValueListType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.EffectivityBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.EffectivityExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.EffectivityType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ElectronicCommunicationBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ElectronicCommunicationExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ElectronicCommunicationType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ExportControlBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ExportControlExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ExportControlType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.FacilityBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.FacilityExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.FacilityType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.FormattedAddressUseBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.FormattedAddressUseExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.FormattedAddressUseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.HarmonizedTariffBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.HarmonizedTariffExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.HarmonizedTariffType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.HazardousMaterialABIEType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.HazardousMaterialBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.HazardousMaterialExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.HazardousMaterialType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.HeaderBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.IDSetType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.IDType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.IDTypeD995CD</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.IdentificationType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.IntermediaryType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ItemBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ItemExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ItemIdentificationBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ItemIdentificationExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ItemIdentificationType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ItemInstanceBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ItemInstanceIdentificationBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ItemInstanceIdentificationExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ItemInstanceIdentificationType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ItemType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.LocationABIEType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.LocationBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.LocationExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.LocationType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.LotBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.LotExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.LotType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ManufacturingItemBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.MaterialBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.MeasureType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.MeasureType671290</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.NameType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.NameType02FC2Z</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.NameValuePairType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.NoteType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.OaclActionCodeEnumerationType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.OaclConfirmationCodeEnumerationType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.OaclResponseCodeEnumerationType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.OaclSystemEnvironmentCodeEnumerationType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ObjectFactory</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.OpenAmountType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.OpenCodeType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.OpenDateTimeType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.OpenFieldValueType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.OpenIDType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.OpenIndicatorType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.OpenMeasureType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.OpenNameType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.OpenNumberType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.OpenQuantityType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.OpenTextType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.OpenTimeType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.OpenUserAreaType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.OperationReferenceBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.OperationReferenceExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.OperationReferenceType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.PackagingBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.PackagingExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.PackagingType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.PartyBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.PartyExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.PartyIdentificationType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.PartyType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.PersonNameBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.PersonNameExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.PersonNameType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.PreferenceABIEType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.PreferenceBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.PreferenceExtensionType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.PreferenceType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.ProductionOrderReferenceBaseType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.QuantityType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.SyncBOMDataAreaType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.SyncBOMType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.SyncType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.TextType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.UOMCodeType</class>
+    <class>com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1.VerbType</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
-      <property name="javax.persistence.jdbc.url" value="jdbc:derby:bomworkshop2015a;create=true;"/>
-      <property name="javax.persistence.jdbc.user" value="bomworkshop2015a"/>
-      <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver"/>
-      <property name="javax.persistence.jdbc.password" value="bomworkshop2015a"/>
-      <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
-      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://192.168.56.101:3306/test001?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="test001"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="test001"/>
+      <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
     </properties>
   </persistence-unit>
 </persistence>
