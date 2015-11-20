@@ -32,7 +32,7 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  */
-@Entity
+//@Entity
 @XmlType(name = "oacl_ConfirmationCodeEnumerationType")
 @XmlEnum
 public enum OaclConfirmationCodeEnumerationType {

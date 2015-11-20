@@ -40,7 +40,7 @@ import javax.xml.bind.annotation.XmlType;
  * 
  * 
  */
-@Entity
+//@Entity
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "PartyBaseType", propOrder = {
     "accountID",

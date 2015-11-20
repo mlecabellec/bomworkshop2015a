@@ -107,7 +107,7 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  */
-@Entity
+//@Entity
 @XmlType(name = "clm6TimeZoneCode1_TimeZoneCodeContentType")
 @XmlEnum
 public enum Clm6TimeZoneCode1TimeZoneCodeContentType {

@@ -8,6 +8,7 @@
 
 package com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1;
 
+import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -32,12 +33,13 @@ import javax.xml.bind.annotation.XmlType;
  * 
  * 
  */
-@Entity
+//@Entity
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "SyncType")
 public class SyncType
-    extends ActionVerbType
+    extends ActionVerbType implements Serializable
 {
+    private static final long serialVersionUID = -2217358783057067643L;
 
     @XmlAttribute(name = "responseCode")
     protected String responseCode;

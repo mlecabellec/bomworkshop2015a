@@ -79,7 +79,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  * 
  * 
  */
-@Entity
+//@Entity
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "IDType_D995CD", propOrder = {
     "value"

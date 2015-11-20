@@ -16,7 +16,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  *
  * @author vortigern
  */
-@Entity
+//@Entity
 @XmlRootElement
 public class AppParam implements Serializable {
     private static final long serialVersionUID = 1L;

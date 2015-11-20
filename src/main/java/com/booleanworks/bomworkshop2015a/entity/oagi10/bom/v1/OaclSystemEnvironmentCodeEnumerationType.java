@@ -29,7 +29,7 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  */
-@Entity
+//@Entity
 @XmlType(name = "oacl_SystemEnvironmentCodeEnumerationType")
 @XmlEnum
 public enum OaclSystemEnvironmentCodeEnumerationType {

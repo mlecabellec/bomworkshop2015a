@@ -34,7 +34,7 @@ import javax.xml.namespace.QName;
  * provided in this class.
  * 
  */
-@Entity
+//@Entity
 @XmlRegistry
 public class ObjectFactory {
 

@@ -41,7 +41,7 @@ public class TestDataHelper implements ServletContextListener {
                 Logger.getGlobal().warning("TestDataHelper.contextInitialized, got an object !!!");
                 System.out.println("TestDataHelper.contextInitialized, got an object !!!");
                 
-                EntityManagerFactory emf = Persistence.createEntityManagerFactory("com.booleanworks_bomworkshop2015a_war_1.0-SNAPSHOTPU");
+                EntityManagerFactory emf = Persistence.createEntityManagerFactory("bomworkshop2015a");
 
                 emf.createEntityManager().persist(testsyncBom);
                 
@@ -67,18 +67,6 @@ public class TestDataHelper implements ServletContextListener {
         System.out.println("TestDataHelper.contextDestroyed");
     }
 
-    public void persist(Object object) {
-        EntityManager em = emf.createEntityManager();
-        try {
-            em.getTransaction().begin();
-            em.persist(object);
-            em.getTransaction().commit();
-        } catch (Exception e) {
-            Logger.getLogger(getClass().getName()).log(Level.SEVERE, "exception caught", e);
-            em.getTransaction().rollback();
-        } finally {
-            em.close();
-        }
-    }
+
 
 }

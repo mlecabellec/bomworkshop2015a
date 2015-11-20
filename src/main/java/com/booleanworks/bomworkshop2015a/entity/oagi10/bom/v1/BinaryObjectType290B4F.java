@@ -80,7 +80,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  * 
  * 
  */
-@Entity
+//@Entity
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "BinaryObjectType_290B4F", propOrder = {
     "value"

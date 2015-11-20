@@ -32,7 +32,7 @@ import javax.xml.bind.annotation.XmlType;
  * 
  * 
  */
-@Entity
+//@Entity
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ItemInstanceIdentificationExtensionType")
 public class ItemInstanceIdentificationExtensionType

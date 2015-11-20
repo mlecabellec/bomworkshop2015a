@@ -4,22 +4,26 @@
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
 // Généré le : 2015.10.16 à 03:51:42 PM CEST 
 //
-
-
 package com.booleanworks.bomworkshop2015a.entity.oagi10.bom.v1;
 
+import java.io.Serializable;
+import java.util.Objects;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Classe Java pour SyncBOMType complex type.
- * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
- * 
+ * <p>
+ * Classe Java pour SyncBOMType complex type.
+ *
+ * <p>
+ * Le fragment de schéma suivant indique le contenu attendu figurant dans cette
+ * classe.
+ *
  * <pre>
  * &lt;complexType name="SyncBOMType"&gt;
  *   &lt;complexContent&gt;
@@ -31,8 +35,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @Entity
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -40,19 +44,51 @@ import javax.xml.bind.annotation.XmlType;
     "dataArea"
 })
 public class SyncBOMType
-    extends BusinessObjectDocumentType
-{
+        extends BusinessObjectDocumentType implements Serializable {
+
+    private static final long serialVersionUID = -3337403996305943235L;
+
+    @Id
+    @XmlTransient
+    public Long getId() {
+        return (long) this.hashCode();
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 29 * hash + Objects.hashCode(this.dataArea);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final SyncBOMType other = (SyncBOMType) obj;
+        if (!Objects.equals(this.dataArea, other.dataArea)) {
+            return false;
+        }
+        return true;
+    }
+    
+    
 
     @XmlElement(name = "DataArea", required = true)
     protected SyncBOMDataAreaType dataArea;
 
     /**
      * Obtient la valeur de la propriété dataArea.
-     * 
-     * @return
-     *     possible object is
-     *     {@link SyncBOMDataAreaType }
-     *     
+     *
+     * @return possible object is {@link SyncBOMDataAreaType }
+     *
      */
     public SyncBOMDataAreaType getDataArea() {
         return dataArea;
@@ -60,11 +96,9 @@ public class SyncBOMType
 
     /**
      * Définit la valeur de la propriété dataArea.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link SyncBOMDataAreaType }
-     *     
+     *
+     * @param value allowed object is {@link SyncBOMDataAreaType }
+     *
      */
     public void setDataArea(SyncBOMDataAreaType value) {
         this.dataArea = value;

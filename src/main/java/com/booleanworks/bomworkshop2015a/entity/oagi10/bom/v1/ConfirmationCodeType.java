@@ -31,7 +31,7 @@ import javax.xml.bind.annotation.XmlValue;
  * 
  * 
  */
-@Entity
+//@Entity
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ConfirmationCodeType", propOrder = {
     "value"
